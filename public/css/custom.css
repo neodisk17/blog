@@ -1,0 +1,47 @@
+.sidebar{
+    display: inline-block;
+    width: 200px;
+    /* height: 100%; */
+}
+
+.nav{
+    display: block;
+}
+
+ul li{
+    display: block;
+    border: 1px solid;
+    padding: 5px;
+    padding-left: 30px;
+    background: #cf8d6aeb;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+li a{
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+li a:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.toggle-button button{
+    width: 50px;
+    height: 40px;
+    margin: 10px 0px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #7BB51D;
+    cursor: progress;
+}
+
+.toggle-button .icon-bar{
+    background-color: black;
+    display: block;
+    margin-top: 4px;
+    height: 4px;
+    border-radius: 1px;
+}

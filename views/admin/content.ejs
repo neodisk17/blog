@@ -1,0 +1,45 @@
+<div class="form">
+    <div class="form-group">
+        <label for="title">Title</label>
+            <input type="text" id="title" placeholder="Enter a tile" required="true">
+    </div>
+
+    <div class="form-group">
+        <label for="article">Enter the article</label>
+        <textarea placeholder="Enter your article" required="true"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="image">Upload a Banner Image</label>
+        <input type="file" id="image">
+    </div>
+
+    <div class="form-group">
+        <label for="comment">Do you want to enable comments?</label>
+        <input type="radio" name="comment" value="enable" checked>Enable
+        <input type="radio" name="comment" value="disable">Disable
+    </div>
+    
+    <div class="form-group">
+            <label for="post">Do you want to enable post?</label>
+            <input type="radio" name="post" value="enable" checked>Enable
+            <input type="radio" name="post" value="disable">Disable
+    </div>
+
+    <div class="form-group">
+        <label for="tag">Tags</label>
+        <input type="text" placeholder="Enter tags">
+    </div>
+
+    <div class="form-group">
+        <input type="submit" name="add_post" value="add_post">
+    </div>
+    
+    <% content.forEach(item,index){ %>
+        <div class="form-group">
+            <label for="<%=item[index].id%>"><%=item[index].label %></label>
+
+        </div>
+    <% } %>
+
+</div>

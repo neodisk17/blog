@@ -1,1 +1,15 @@
-<h2>This is seidebar</h2>
+<div class="toggle-button ">
+    <button type="button">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+
+<div class="sidebar">
+    <ul class="nav nav-item">
+        <% for(var i=0;i<duty.duty.length;i++){ %>
+            <li class=""><a href="/<%=duty.duty[i].link %>" ><%=duty.duty[i].title%></a></li>
+        <% } %>
+    </ul>
+</div>
